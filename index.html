@@ -463,7 +463,7 @@
         card.className = "bg-white p-4 pb-6 rounded-md border-2 border-stone-200 shadow-md rotate-[-1deg] hover:rotate-[1deg] hover:scale-102 transition duration-300 relative";
         card.innerHTML = `
           <div class="w-full h-52 bg-stone-50 border border-stone-200 rounded overflow-hidden relative">
-            <img src="${item.img}" alt="Album image" class="w-full h-full object-cover">
+            <img src="${item.img}" alt="Album image" class="max-w-full max-h-none mx-auto object-contain">
             <div class="absolute top-[-5px] left-[35%] w-24 h-5 bg-yellow-200/50 border-x border-dashed border-stone-400 rotate-2"></div>
           </div>
           <p class="font-cute text-sm text-stone-700 leading-tight mt-4">${item.caption}</p>
